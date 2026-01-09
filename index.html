@@ -1,233 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <title>Login</title>
 
-    <style>
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Login</title>
 
-.banner {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("https://img.freepik.com/premium-vector/dark-blue-abstract-vector-background-with-overlapping_49459-451.jpg");
-  background-size: cover;
-  background-position: center;
-}
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-.inner-banner {
-  padding: 20px;
-}
+    .banner {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url("https://plus.unsplash.com/premium_photo-1671995576541-a63078fa3063?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvZmVzc2lvbmFsJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D");
+      background-size: cover;
+      background-position: center;
+    }
 
-.form {
-  max-width: 420px;
-  width: 100%;
-  padding: 25px;
-  border-radius: 15px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(8px);
-  color: aliceblue;
-}
+    .inner-banner {
+      padding: 20px;
+    }
 
-.content h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    .form {
+      max-width: 420px;
+      width: 100%;
+      padding: 25px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(8px);
+      color: black;
+    }
 
-.name .label {
-  display: grid;
-  grid-template-columns: 140px 15px 1fr;
-  align-items: center;
-  gap: 5px;
-  margin: 15px 0;
-  font-size: 16px;
-}
+    .content h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-.colon {
-  font-weight: bold;
-  text-align: center;
-}
+    .name .label {
+      display: grid;
+      grid-template-columns: 140px 15px 1fr;
+      align-items: center;
+      gap: 5px;
+      margin: 15px 0;
+      font-size: 16px;
+    }
 
-.name input {
-  width: 100%;
-  padding: 8px;
-  font-size: 15px;
-  border-radius: 5px;
-  border: none;
-}
+    .colon {
+      font-weight: bold;
+      text-align: center;
+    }
 
-.name input:focus {
-  outline: none;
-}
+    .name input {
+      width: 100%;
+      padding: 8px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: none;
+    }
 
-.submit {
-  text-align: center;
-  margin-top: 20px;
-}
+    .name input:focus {
+      outline: none;
+    }
 
-.submit input {
-  width: 120px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
+    .submit {
+      text-align: center;
+      margin-top: 20px;
+    }
 
-.submit input:hover {
-  background: rgb(16, 105, 6);
-  color: white;
-}
+    .submit input {
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
 
-.content a {
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  color: aliceblue;
-  text-decoration: none;
-}
+    .submit input:hover {
+      background: rgb(255, 194, 64);
+      color: white;
+    }
 
-.content a:hover {
-  color: rgba(255, 0, 0, 0.941);
-}
+    .content a {
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      color: aliceblue;
+      text-decoration: none;
+    }
 
-.social-icons {
-  text-align: center;
-  margin-top: 25px;
-}
+    .content a:hover {
+      color: rgba(255, 0, 0, 0.941);
+    }
 
-.social-icons i {
-  font-size: 28px;
-  margin: 8px;
-  cursor: pointer;
-  color: aliceblue;
-}
+    .social-icons {
+      text-align: center;
+      margin-top: 25px;
+    }
 
-.social-icons i:hover {
-  color: rgba(255, 0, 0, 0.888);
-}
+    .social-icons i {
+      font-size: 28px;
+      margin: 8px;
+      cursor: pointer;
+      color: aliceblue;
+    }
 
-@media (max-width: 480px) {
+    .social-icons i:hover {
+      color: rgba(255, 0, 0, 0.888);
+    }
 
-  .form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin-right: 80px;
-    padding: 10px 5px;
-  }
-  /* .form {
+    @media (max-width: 480px) {
+
+      .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-right: 80px;
+        padding: 10px 5px;
+      }
+
+      /* .form {
   } */
 
-  .name .label {
-    grid-template-columns: 1fr;
-  }
+      .name .label {
+        grid-template-columns: 1fr;
+      }
 
-  .colon {
-    display: none;
-  }
+      .colon {
+        display: none;
+      }
 
-  .name label {
-    margin-bottom: 5px;
-  }
+      .name label {
+        margin-bottom: 5px;
+      }
 
-  .submit input {
-    width: 100px;
-    height: 35px;
-  }
+      .submit input {
+        width: 100px;
+        height: 35px;
+      }
 
-  .social-icons i {
-    font-size: 24px;
-  }
-}
-@media (max-width: 292px) {
+      .social-icons i {
+        font-size: 24px;
+      }
+    }
 
-  .colon {
-    display: none;
-  }
+    @media (max-width: 292px) {
 
-  .name label {
-    margin-bottom: 5px;
-  }
+      .colon {
+        display: none;
+      }
 
-  .submit input {
-    width: 70px;
-    height: 25px;
-  }
+      .name label {
+        margin-bottom: 5px;
+      }
 
-  .social-icons i {
-    font-size: 24px;
-  }
-}
+      .submit input {
+        width: 70px;
+        height: 25px;
+      }
 
-    </style>
-  </head>
+      .social-icons i {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
 
-  <body>
-    <div class="contact">
-      <div class="banner">
-        <div class="inner-banner">
-          <div class="form">
-            <div class="content">
-              <h1>Login Here</h1>
+<body>
+  <div class="contact">
+    <div class="banner">
+      <div class="inner-banner">
+        <div class="form">
+          <div class="content">
+            <h1>Login Here</h1>
 
-              <div class="name">
-                <div class="label">
-                  <label for="">First Name</label>
-                  <div class="colon">:</div>
-                  <input type="text" placeholder="First Name" required />
-                </div>
-
-                <div class="label">
-                  <label for="password">Password</label>
-                  <div class="colon">:</div>
-                  <input type="password" placeholder="Password" required />
-                </div>
-
-                <div class="label">
-                  <label for="password">Confirm Password</label>
-                  <div class="colon">:</div>
-                  <input
-                    type="password"
-                    placeholder="Confirm Password"
-                    required />
-                </div>
+            <div class="name">
+              <div class="label">
+                <label for="">First Name</label>
+                <div class="colon">:</div>
+                <input type="text" placeholder="First Name" required />
               </div>
 
-              <div class="submit">
-                <a href="login1.html"><input type="submit" /></a>
+              <div class="label">
+                <label for="password">Password</label>
+                <div class="colon">:</div>
+                <input type="password" placeholder="Password" required />
               </div>
 
-              <a href="registrationform.html">New User Registration Here</a>
+              <div class="label">
+                <label for="password">Confirm Password</label>
+                <div class="colon">:</div>
+                <input type="password" placeholder="Confirm Password" required />
+              </div>
             </div>
-          </div>
 
-          <div class="social-icons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-whatsapp"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
+            <div class="submit">
+              <a href="login1.html"><input type="submit" /></a>
+            </div>
+
+            <a href="registrationform.html">New User Registration Here</a>
           </div>
+        </div>
+
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
